@@ -1,17 +1,41 @@
 <mat-toolbar>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
+  <button mat-icon-button class="example-icon" aria-label="eco">
+    <mat-icon>eco</mat-icon>
   </button>
   <span>Pedidos Herbalife</span>
   <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="eco icon">
     <mat-icon>favorite</mat-icon>
   </button>
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
     <mat-icon>share</mat-icon>
   </button>
 </mat-toolbar>
-<div class="container">
+<div class="container mt-2">
+  <mat-tab-group>
+    <mat-tab label="Shakes Básico">
+      <div class="card mt-3" style="width: 65rem;">
+        <div class="row">
+          <div class="col-md-3 m-4">
+            <h1>Monte Seu Shake Simples</h1>
+            <p>Escolha até 3 sabores</p>
+            <p>Acompanha uma dose de NRG sabor Tropical (energia) e uma dose do cha Herbal Concentrate</p>
+          </div>
+          <div class="col-md-5">
+            <div class="img-size">
+              <img  src="../../assets/img/foto-shake-basico.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
 
-
+    </mat-tab>
+    <mat-tab label="Slim day"> Content 2 </mat-tab>
+    <mat-tab label="Shake Gourmet"> Content 3 </mat-tab>
+    <mat-tab label="Bolo de Pote"> Content 4 </mat-tab>
+    <mat-tab label="Pudim"> Content 5 </mat-tab>
+    <mat-tab label="Pizza Fit"> Content 6 </mat-tab>
+    <mat-tab label="waffle"> Content 7 </mat-tab>
+    <mat-tab label="Sopa"> Content 8 </mat-tab>
+  </mat-tab-group>
 </div>
