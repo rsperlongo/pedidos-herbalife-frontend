@@ -1,11 +1,7 @@
 <app-header></app-header>
 <div class="container mt-2">
-  <div class="jumbotron mt-2 display-1">
-    <div class="container">
-      <div class="row">
-        <img class="logo" src="../../assets/img/logo-herbalife.png">
-      </div>
-    </div>
+  <div class="jumbotron mt-2">
+    <img class="logo" src="../../assets/img/logo-herbalife.png" />
   </div>
   <mat-tab-group>
     <mat-tab label="Shakes Básico">
@@ -15,37 +11,56 @@
             <div class="col-5 m-4">
               <h1>Monte Seu Shake Simples</h1>
               <p>Escolha até 3 sabores</p>
-              <p>Acompanha uma dose de NRG sabor Tropical (energia) e <br> uma dose do cha Herbal Concentrate</p>
+              <p>
+                Acompanha uma dose de NRG sabor Tropical (energia) e <br />
+                uma dose do cha Herbal Concentrate
+              </p>
               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary" (click)="openModal(template)">
+              <button
+                type="button"
+                class="btn btn-primary"
+                (click)="openModal(template)"
+              >
                 Escolher Sabor
               </button>
 
               <ng-template #template>
                 <div class="modal-header">
-                  <h4 class="modal-title pull-left">Você pode escolher até 3 sabores</h4>
-                  <button type="button" class="close pull-right" aria-label="Close" routerLink="/order">
+                  <h4 class="modal-title pull-left">
+                    Você pode escolher até 3 sabores
+                  </h4>
+                  <button
+                    type="button"
+                    class="close pull-right"
+                    aria-label="Close"
+                    routerLink="/order"
+                  >
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  Seu pedido vem junto uma dose de NRG e outra dose de Herbal Concentrate
+                  Seu pedido vem junto uma dose de NRG e outra dose de Herbal
+                  Concentrate
                   <div class="mt-1">
-                    <button type="button" class="btn btn-info" routerLink="/order">Vamos escolher o Shake</button>
+                    <button
+                      type="button"
+                      class="btn btn-info"
+                      routerLink="/order"
+                    >
+                      Vamos escolher o Shake
+                    </button>
                   </div>
                 </div>
               </ng-template>
             </div>
             <div class="col-6">
               <div class="img-size">
-                <img  src="../../assets/img/shake-img.png">
+                <img src="../../assets/img/shake-img.png" />
               </div>
             </div>
           </div>
         </div>
       </div>
-
-
     </mat-tab>
     <mat-tab label="Slim day"> Content 2 </mat-tab>
     <mat-tab label="Shake Gourmet"> Content 3 </mat-tab>

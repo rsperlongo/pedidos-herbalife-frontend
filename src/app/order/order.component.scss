@@ -21,3 +21,13 @@ ul {
 .mat-checkbox-indeterminate .mat-checkbox-background {
   background-color: $color-toolbar !important;
 }
+
+.footer {
+  background: #5f835a;
+  color: white;
+
+  p {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+}
