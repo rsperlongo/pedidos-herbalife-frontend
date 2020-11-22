@@ -1,5 +1,12 @@
 <app-header></app-header>
 <div class="container mt-2">
+  <div class="jumbotron mt-2 display-1">
+    <div class="container">
+      <div class="row">
+        <img class="logo" src="../../assets/img/logo-herbalife.png">
+      </div>
+    </div>
+  </div>
   <mat-tab-group>
     <mat-tab label="Shakes Básico">
       <div class="container">
@@ -17,14 +24,14 @@
               <ng-template #template>
                 <div class="modal-header">
                   <h4 class="modal-title pull-left">Você pode escolher até 3 sabores</h4>
-                  <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                  <button type="button" class="close pull-right" aria-label="Close" routerLink="/order">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
                   Seu pedido vem junto uma dose de NRG e outra dose de Herbal Concentrate
                   <div class="mt-1">
-                    <button type="button" class="btn btn-info" routerLink="/order-details">Vamos escolher o Shake</button>
+                    <button type="button" class="btn btn-info" routerLink="/order">Vamos escolher o Shake</button>
                   </div>
                 </div>
               </ng-template>

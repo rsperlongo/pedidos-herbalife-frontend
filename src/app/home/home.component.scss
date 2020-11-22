@@ -12,3 +12,15 @@
   border: 1px solid green;
   border-radius: 0;
 }
+
+.jumbotron {
+  background: $color-jumbotron;
+  border-radius: 0;
+  height: 300px;
+  display: flex;
+}
+
+.logo {
+  width: 250px;
+  height: 80px;
+}
