@@ -10,6 +10,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
+import {MatInputModule} from '@angular/material/input';
 
 
 import { HeaderComponent } from './header/header.component';
@@ -25,7 +26,8 @@ import { HeaderComponent } from './header/header.component';
     MatTabsModule,
     MatCheckboxModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatInputModule
   ],
   exports: [
     MatToolbarModule,
@@ -36,7 +38,8 @@ import { HeaderComponent } from './header/header.component';
     MatCardModule,
     MatCheckboxModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatInputModule
   ]
 })
 export class SharedModule { }
