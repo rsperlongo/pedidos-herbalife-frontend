@@ -11,6 +11,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 import { HeaderComponent } from './header/header.component';
@@ -27,7 +28,8 @@ import { HeaderComponent } from './header/header.component';
     MatCheckboxModule,
     MatDividerModule,
     MatListModule,
-    MatInputModule
+    MatInputModule,
+    MatFormFieldModule
   ],
   exports: [
     MatToolbarModule,
@@ -39,7 +41,8 @@ import { HeaderComponent } from './header/header.component';
     MatCheckboxModule,
     MatDividerModule,
     MatListModule,
-    MatInputModule
+    MatInputModule,
+    MatFormFieldModule
   ]
 })
 export class SharedModule { }

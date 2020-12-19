@@ -22,12 +22,11 @@
             <p class="product-cart mt-4">R$ 28,00</p>
           </div>
         </div>
-
       </div>
       <div class="col-2">
         <mat-form-field class="example-full-width">
           <mat-label>Quantidade</mat-label>
-          <input type="number" matInput value="1">
+          <input type="number" matInput value="1" />
         </mat-form-field>
       </div>
       <div class="col-2">
@@ -46,12 +45,11 @@
             <p class="product-cart mt-4">R$ 97,00</p>
           </div>
         </div>
-
       </div>
       <div class="col-2">
         <mat-form-field class="example-full-width">
           <mat-label>Quantidade</mat-label>
-          <input type="number" matInput value="1">
+          <input type="number" matInput value="1" />
         </mat-form-field>
       </div>
       <div class="col-2">
@@ -60,12 +58,69 @@
     </div>
   </mat-card>
   <div class="row">
-    <div class="col-6">
-      <button type="button" class="btn btn-outline-success btn-lg mt-5">Checkout e Pagamento</button>
-    </div>
 
     <div class="col-6 mt-3">
       <h2>Total: R$ 125,00</h2>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <button
+    type="button"
+    class="btn btn-primary"
+    (click)="isCollapsed = !isCollapsed"
+    [attr.aria-expanded]="!isCollapsed"
+    aria-controls="collapseBasic"
+  >
+    Endereço de Entrega
+  </button>
+  <hr />
+  <div id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
+    <div class="well well-lg card card-block card-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <mat-form-field appearance="fill">
+              <mat-label>CEP</mat-label>
+              <input matInput />
+            </mat-form-field>
+          </div>
+          <div class="col-12">
+            <form class="example-form">
+              <mat-form-field class="example-full-width">
+                <mat-label>Endereço(Rua, Avenida)</mat-label>
+                <input matInput />
+              </mat-form-field>
+              <div class="row">
+                <div class="col-6">
+                  <mat-form-field class="example-full-width">
+                    <mat-label>complemento</mat-label>
+                    <input matInput />
+                  </mat-form-field>
+                </div>
+
+                <div class="col-4">
+                  <mat-form-field class="example-full-width">
+                    <mat-label>Cidade</mat-label>
+                    <input matInput />
+                  </mat-form-field>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <button type="button" class="btn btn-outline-success btn-lg mt-5 mb-4">
+        Checkout e Pagamento
+      </button>
     </div>
   </div>
 </div>
