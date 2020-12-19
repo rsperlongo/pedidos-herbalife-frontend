@@ -3,7 +3,41 @@
 .example-spacer {
   flex: 1 1 auto;
 }
+.img-size {
+  display: flex;
+  height: 400px;
+  width: 100%;
+  background: url("../../assets/img/shake-img.png") no-repeat;
+}
 
-.mat-toolbar {
-  color: $color-toolbar;
+.card {
+  border: 1px solid green;
+  border-radius: 0;
+}
+
+.jumbotron {
+  background: $color-jumbotron;
+  border-radius: 0;
+  height: 300px;
+  display: flex;
+  margin-right: 16px;
+}
+
+.logo {
+  width: 250px;
+  height: 80px;
+}
+
+.payment {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.title1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.content {
+  height: 200px;
 }

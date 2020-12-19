@@ -9,6 +9,18 @@ const routes: Routes = [
     )
   },
   {
+    path: 'order',
+    loadChildren: () => import('./order/order.module').then(
+      m => m.OrderModule
+    )
+  },
+  {
+    path: 'cart',
+    loadChildren: () => import('./cart/cart.module').then(
+      m => m.CartModule
+    )
+  },
+  {
     path: '',
     redirectTo: '/home',
     pathMatch: 'full'
@@ -16,7 +28,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
