@@ -6,11 +6,12 @@
   <mat-tab-group>
     <mat-tab label="Shakes Básico">
       <div class="container">
-        <div class="card mt-3">
+        <div class="card mt-3" *ngFor="let product of products">
           <div class="row">
             <div class="col-5 m-4">
-              <h1>Monte Seu Shake Simples</h1>
+              <h1>Monte Seu {{ product.product }}</h1>
               <p>Escolha até 3 sabores</p>
+              <p>{{ product.description }}</p>
               <p>
                 Acompanha uma dose de NRG sabor Tropical (energia) e <br />
                 uma dose do cha Herbal Concentrate
