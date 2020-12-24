@@ -41,3 +41,17 @@
 .content {
   height: 200px;
 }
+
+.footer {
+  background: $color-jumbotron;
+  color: white;
+
+  p {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+}
+
+.content {
+  height: 200px;
+}
