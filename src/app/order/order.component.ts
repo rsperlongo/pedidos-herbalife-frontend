@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Flavours } from '../models/flavours';
+import { FlavoursService } from '../services/flavours.service';
 
 @Component({
   selector: 'app-order',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderComponent implements OnInit {
 
-  constructor() { }
+  flavours: Flavours[];
+
+  constructor(private flavoursService: FlavoursService) { }
 
   ngOnInit(): void {
+    this.getFlavours();
+  }
+
+  getFlavours() {
+    this.flavoursService.getFlavour().subscribe(flavours => this.flavours = flavours)
   }
 
 }
