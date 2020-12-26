@@ -11,29 +11,76 @@
     <h1>Sabor</h1>
     <p>Escolha de 1 a 3 porções</p>
     <form>
-      <section class="example-section">
+      <section class="example-section" *ngFor="let flavour of flavours">
         <mat-list>
           <mat-list-item>
-            <mat-checkbox class="example-margin">Banana Caramelizada</mat-checkbox>
+            <mat-checkbox class="example-margin">{{ flavour.banana }}</mat-checkbox>
           </mat-list-item>
-          <mat-divider></mat-divider>
-          <mat-list-item>
-            <mat-checkbox class="example-margin">Baunilha Cremoso</mat-checkbox>
-          </mat-list-item>
-          <mat-divider></mat-divider>
-          <mat-list-item>
-            <mat-checkbox class="example-margin">Chocolate Sensation</mat-checkbox>
-          </mat-list-item>
-          <mat-divider></mat-divider>
-          <mat-list-item>
-            <mat-checkbox class="example-margin">Coco</mat-checkbox>
-          </mat-list-item>
-          <mat-divider></mat-divider>
-          <mat-list-item>
-            <mat-checkbox class="example-margin">Cookies 'n Cream</mat-checkbox>
-          </mat-list-item>
-          <mat-divider></mat-divider>
         </mat-list>
+        <mat-divider></mat-divider>
+
+        <mat-list>
+          <mat-list-item>
+            <mat-checkbox class="example-margin">{{ flavour.chocolate }}</mat-checkbox>
+          </mat-list-item>
+        </mat-list>
+        <mat-divider></mat-divider>
+
+        <mat-list>
+          <mat-list-item>
+            <mat-checkbox class="example-margin">{{ flavour.coconut }}</mat-checkbox>
+          </mat-list-item>
+        </mat-list>
+        <mat-divider></mat-divider>
+
+        <mat-list>
+          <mat-list-item>
+            <mat-checkbox class="example-margin">{{ flavour.coffee }}</mat-checkbox>
+          </mat-list-item>
+        </mat-list>
+        <mat-divider></mat-divider>
+
+        <mat-list>
+          <mat-list-item>
+            <mat-checkbox class="example-margin">{{ flavour.cookies }}</mat-checkbox>
+          </mat-list-item>
+        </mat-list>
+        <mat-divider></mat-divider>
+
+        <mat-list>
+          <mat-list-item>
+            <mat-checkbox class="example-margin">{{ flavour.milk }}</mat-checkbox>
+          </mat-list-item>
+        </mat-list>
+        <mat-divider></mat-divider>
+
+        <mat-list>
+          <mat-list-item>
+            <mat-checkbox class="example-margin">{{ flavour.passion_fruit }}</mat-checkbox>
+          </mat-list-item>
+        </mat-list>
+        <mat-divider></mat-divider>
+
+        <mat-list>
+          <mat-list-item>
+            <mat-checkbox class="example-margin">{{ flavour.peanuts }}</mat-checkbox>
+          </mat-list-item>
+        </mat-list>
+        <mat-divider></mat-divider>
+
+        <mat-list>
+          <mat-list-item>
+            <mat-checkbox class="example-margin">{{ flavour.strawberry }}</mat-checkbox>
+          </mat-list-item>
+        </mat-list>
+        <mat-divider></mat-divider>
+
+        <mat-list>
+          <mat-list-item>
+            <mat-checkbox class="example-margin">{{ flavour.vanilla }}</mat-checkbox>
+          </mat-list-item>
+        </mat-list>
+        <mat-divider></mat-divider>
       </section>
     </form>
   </mat-card>
