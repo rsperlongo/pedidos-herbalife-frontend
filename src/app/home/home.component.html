@@ -4,7 +4,7 @@
     <img class="logo mt-2" src="../../assets/img/logo-herbalife.png" />
   </div>
   <mat-tab-group>
-    <mat-tab label="Shakes Básico">
+    <mat-tab label="Peça Aqui">
       <div class="container">
         <div class="card mt-3" *ngFor="let product of products">
           <div class="row">
@@ -15,6 +15,8 @@
                 Acompanha uma dose de NRG sabor Tropical (energia) e <br />
                 uma dose do cha Herbal Concentrate
               </p>
+
+              <h2>R$ {{ product.price }}</h2>
               <!-- Button trigger modal -->
               <button
                 type="button"
@@ -60,13 +62,9 @@
         </div>
       </div>
     </mat-tab>
-    <mat-tab label="Slim day"> Content 2 </mat-tab>
-    <mat-tab label="Shake Gourmet"> Content 3 </mat-tab>
-    <mat-tab label="Bolo de Pote"> Content 4 </mat-tab>
-    <mat-tab label="Pudim"> Content 5 </mat-tab>
-    <mat-tab label="Pizza Fit"> Content 6 </mat-tab>
-    <mat-tab label="waffle"> Content 7 </mat-tab>
-    <mat-tab label="Sopa"> Content 8 </mat-tab>
+    <mat-tab label="Como funciona"> Content 2 </mat-tab>
+    <mat-tab label="Formas de pagamento"> Content 3 </mat-tab>
+    <mat-tab label="Contato"> Content 4 </mat-tab>
   </mat-tab-group>
 </div>
 <footer class="footer mt-5 pt-5">
