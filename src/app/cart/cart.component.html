@@ -78,14 +78,17 @@
   <hr />
   <div id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
     <div class="well well-lg card card-block card-header">
+
       <div class="container">
         <div class="row">
           <div class="col-6">
+
             <mat-form-field appearance="fill">
               <mat-label>CEP</mat-label>
               <input matInput />
             </mat-form-field>
           </div>
+
           <div class="col-12">
             <form class="example-form">
               <mat-form-field class="example-full-width">
@@ -97,6 +100,7 @@
                 <mat-label>Endereço(Rua, Avenida)</mat-label>
                 <input matInput />
               </mat-form-field>
+
               <div class="row">
                 <div class="col-4">
                   <mat-form-field class="example-full-width">
@@ -115,6 +119,22 @@
                 <div class="col-4">
                   <mat-form-field class="example-full-width">
                     <mat-label>UF</mat-label>
+                    <input matInput />
+                  </mat-form-field>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-6">
+                  <mat-form-field>
+                    <mat-label>E-mail</mat-label>
+                    <input matInput />
+                  </mat-form-field>
+                </div>
+
+                <div class="col-4">
+                  <mat-form-field>
+                    <mat-label>Telefone</mat-label>
                     <input matInput />
                   </mat-form-field>
                 </div>
