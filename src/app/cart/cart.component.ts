@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CepService } from '../shared/utils/cep.service';
 
 @Component({
   selector: 'app-cart',
@@ -8,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class CartComponent implements OnInit {
   isCollapsed = true;
 
-  constructor() { }
+  constructor(private cepService: CepService) { }
 
   ngOnInit(): void {
+  }
+
+  consultaCep() {
+
   }
 
 }

@@ -15,6 +15,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 import { HeaderComponent } from './header/header.component';
+import { CepService } from './utils/cep.service';
 
 
 @NgModule({
@@ -43,6 +44,9 @@ import { HeaderComponent } from './header/header.component';
     MatListModule,
     MatInputModule,
     MatFormFieldModule
+  ],
+  providers: [
+    CepService
   ]
 })
 export class SharedModule { }
