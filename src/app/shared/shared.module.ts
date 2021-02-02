@@ -16,12 +16,15 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 
 import { HeaderComponent } from './header/header.component';
 import { CepService } from './utils/cep.service';
+// import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [HeaderComponent],
   imports: [
     CommonModule,
+    // FormsModule,
+    // ReactiveFormsModule,
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,

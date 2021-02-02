@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl,FormGroup,Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-cart',
@@ -9,17 +9,23 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 
 export class CartComponent implements OnInit {
   isCollapsed = true;
-  cartForm = this.fb.group({
-    cep: ['', Validators.required],
+
+  cartForm = new FormGroup({
+    email : new FormControl('', [Validators.required, Validators.email]),
   })
 
-  constructor(private fb: FormBuilder) { }
+
+  constructor() { }
 
   ngOnInit(): void {
+    this.getErrorMessage();
   }
 
-  onSubmit() {
-    //
-  }
+  getErrorMessage() {
+    if (this.cartForm.hasError('required')) {
+      return 'Campo Obrigatório';
+    }
 
+    return this.cartForm.hasError('email') ? 'Email não válido' : '';
+  }
 }
