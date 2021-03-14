@@ -17,8 +17,15 @@
               </p>
 
               <h2>R$ {{ product.price }}</h2>
-              <!-- Button trigger modal -->
               <button
+                type="button"
+                class="btn btn-primary"
+                routerLink="/order"
+              >
+                Escolher Sabor
+              </button>
+              <!-- Button trigger modal -->
+             <!--  <button
                 type="button"
                 class="btn btn-primary"
                 (click)="openModal(template)"
@@ -53,7 +60,7 @@
                     </button>
                   </div>
                 </div>
-              </ng-template>
+              </ng-template> -->
             </div>
             <div class="col-6">
               <div class="img-size"></div>

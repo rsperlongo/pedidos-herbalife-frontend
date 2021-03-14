@@ -11,6 +11,10 @@ export class OrderComponent implements OnInit {
 
   flavours: Flavours[];
 
+  flavoursmock = [
+    'chocolate', 'morango', 'baunilha'
+  ]
+
   constructor(private flavoursService: FlavoursService) { }
 
   ngOnInit(): void {
